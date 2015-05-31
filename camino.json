@@ -1,0 +1,26 @@
+{
+"type":"FeatureCollection",
+"features":[{
+  "type":"Feature",
+  "id":"bus_line1.fid-730f3da1_14a2e98e256_3518",
+  "geometry":{
+    "type":"LineString",
+    "coordinates":[[-5.929754, 37.396550],[-5.930119, 37.396269],[-5.930376, 37.395639],[-5.930419, 37.393662],[-5.931031, 37.392887],[-5.930286, 37.391272],[-5.927690, 37.391698],[-5.926426, 37.390012],[-5.925847, 37.390574],[-5.924968, 37.390812],[-5.926404, 37.391953],[-5.929878, 37.396383]]
+			},
+	"geometry_name":"line",
+  "properties":{
+    "id":317,
+    "code":"70",
+    "color":"#00ff00",
+    "description":"Camino Parque",
+    "name":"Circuito parque",
+    "type":null
+    }
+  }],
+"crs":{
+  "type":"EPSG",
+  "properties": {
+    "code":"4326"
+    }
+  }
+}
