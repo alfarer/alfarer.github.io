@@ -18,7 +18,7 @@
 
   <!-- Stylesheets -->
   <!-- LeafLet CSS -->
-  <link rel="stylesheet" href="../assets/leaflet-0.7.3/leaflet.css" /> 
+  <link rel="stylesheet" href="https://github.com/cgranell/course-webmapping/blob/gh-pages/assets/leaflet-0.7.3/leaflet.css" /> 
 
   <!-- custom styles -->
   <style>
@@ -45,16 +45,16 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="../assets/jquery-1.11.1.min.js"></script>
+  <script src="https://github.com/cgranell/course-webmapping/blob/gh-pages/assets/jquery-1.11.1.min.js"></script>
 
-  <script src="../assets/leaflet-0.7.3/leaflet.js"> </script>
+  <script src="https://github.com/cgranell/course-webmapping/blob/gh-pages/assets/leaflet-0.7.3/leaflet.js"> </script>
   <!-- Load Leaflet from CDN-->
   <!--<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>-->
 
   <!-- Load Esri Leaflet from CDN -->
   <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet/1.0.0-rc.5/esri-leaflet.js"></script>
   <!-- Load Leaflet plugin. See https://github.com/joker-x/Leaflet.geoCSV -->
-  <script src="../assets/leaflet.geocsv-src.js"> </script>
+  <script src="https://github.com/cgranell/course-webmapping/blob/gh-pages/assets/leaflet.geocsv-src.js"> </script>
 
   <!-- Include Leaflet.markercluster via rawgit.com, do not use in production -->
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Leaflet/Leaflet.markercluster/v0.4.0/dist/MarkerCluster.Default.css">
@@ -100,13 +100,13 @@
     // Custom icons for types of trees
     var treeLayerIcons = {
       1: L.icon({
-        iconUrl: "../assets/images/parking-bicicas.png",
+        iconUrl: "https://github.com/cgranell/course-webmapping/blob/gh-pages/assets/images/parking-bicicas.png",
         iconSize: [27, 31],
         iconAnchor: [13.5, 17.5],
         popupAnchor: [0, -11],
       }),
       2: L.icon({
-        iconUrl: "../assets/images/container-organic.png",
+        iconUrl: "https://github.com/cgranell/course-webmapping/blob/gh-pages/assets/images/container-organic.png",
         iconSize: [27, 31],
         iconAnchor: [13.5, 17.5],
         popupAnchor: [0, -11],
@@ -149,7 +149,7 @@
       $.ajax ({
       type:'GET',
       dataType:'text',
-      url:'../data/arboles.csv',
+      url:'arboles.csv',
       error: function(event, request, settings){
       alert("event: "+event+"request: "+request+"settings: "+settings);
     },
@@ -182,7 +182,7 @@
       }
     });
 
-    $.getJSON("../data/camino.json", function (data) {
+    $.getJSON("camino.json", function (data) {
       caminoLayer.addData(data);
       map.addLayer(caminoLayer);
     });
